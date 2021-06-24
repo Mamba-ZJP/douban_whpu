@@ -1,0 +1,32 @@
+<!--pages/detail/detail.wxml-->
+<view class="view">
+  <image src="{{movie.poster}}"/>
+  <view class="hr"></view>
+  <!-- 详情内容 -->
+  <view class="detail">
+    <text>电影类型：{{movie.genre}}</text>
+  </view>
+
+  <view class="hr"></view>
+
+  <view class="detail">
+    <text>电影名称：{{movie.name}}</text>
+  </view>
+  <view class="hr"></view>
+
+  <view class="detail">
+    <text>电影地区：{{movie.country}}</text>
+  </view>
+  <view class="hr"></view>
+
+  <view class="detail">
+    <text>电影语言：{{movie.language}}</text>
+  </view>
+  <view class="hr"></view>
+  
+  
+  <view class="detail">
+    <text>电影简介：{{movie.description}}</text>
+  </view>
+  
+</view>

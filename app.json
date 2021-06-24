@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/movies/movies",
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/recommend/recommend",
+    "pages/detail/detail",
+    "pages/search/search"
+  ],
+  "tabBar": {
+    "color": "#eeee",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#2b2b2b",
+    "list": [
+      {
+        "pagePath": "pages/movies/movies",
+        "iconPath": "/assets/img/dy.png",
+        "selectedIconPath": "/assets/img/dy-1.png",
+        "text": "热门电影"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "iconPath": "/assets/img/dy.png",
+        "selectedIconPath": "/assets/img/dy-1.png",
+        "text": "电影推荐"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "iconPath": "/assets/img/dy.png",
+        "selectedIconPath": "/assets/img/dy-1.png",
+        "text": "电影查询"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "城市影院",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,31 @@
+<view class="view">
+  <view class="search">
+    <input class="input" type="text" model:value="{{inputVal}}"/>
+
+    <button class="SearchButton" bindtap="Search">搜索</button>
+  </view>
+
+  <view class="inputShow">
+    <text>您要搜索的是:{{inputVal}}</text>
+  </view>
+
+  <view class="hr"></view>
+  <block wx:for="{{movies}}">
+    <view class="movie">
+      <!-- 显示图片 -->
+      <view class="pic">
+        <image src="{{item.imgUrl}}" mode="aspectFit"/>
+      </view>
+
+      <view class="movie-info">
+        <text>电影名字：{{item.title}}\n</text>
+        <text>电影类型：电影\n</text>
+        <text>电影年份：{{item.years}}\n</text>
+        <text>电影产地：{{item.area}}\n</text>
+        <text>电影评分：{{item.score}}</text>
+      </view>
+    </view>
+
+    <view class="hr"></view>
+  </block>
+</view>

@@ -1,0 +1,28 @@
+<view class="view">
+  <swiper autoplay="true" indicator-dots="{{true}}" interval="3000">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="img"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <block wx:for="{{movies}}">
+    <view class="movie">
+      <view class="pic">
+        <image src="{{item.images.small}}" />
+      </view>
+      <view class="movie-info">
+        <view class="base-info">
+          <text>名字：{{item.title}}\n</text>
+          <text>导演：{{item.directors[0].name}}\n</text>
+          <text>主演：{{item.casts[0].name}}\n</text>
+          <text>主演：{{item.genres[0]}}\n</text>
+          <text>类型：{{item.pubdates}}\n</text>
+        </view>
+      </view>
+
+    </view>
+    <view class="hr"></view>
+  </block>
+</view>

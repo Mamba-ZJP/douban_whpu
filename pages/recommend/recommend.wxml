@@ -1,0 +1,39 @@
+<!--pages/recommend/recommend.wxml-->
+<view class="select_box">
+  <view class="select" bindtap="selectTap">
+    <text class="select_text">{{selectData[index]}}</text>
+    <image class="select_img" src="/assets/img/rarrow.png" />
+  </view>
+</view>
+
+<!-- 下拉列表数据 -->
+<!-- 当show==false,则height=0px,否则当点击按钮时修改show的值为true,height=300px -->
+<!-- bindtap点击触发属性 -->
+<!-- wxkey获取当前索引 传递给data-index -->
+<!-- data-index绑定当前选中项的索引 -->
+
+<view class="option_box" style="height:{{show ? 300 : 0}}rpx;">
+  <text class="option" wx:for="{{selectData}}" wx:key='this' 
+  data-index='{{index}}' bindtap="optionTap">{{item}}</text>
+</view>
+
+<view class="view">
+  <block wx:for="{{movies}}">
+    <view class="movie" bindtap="detail" id="{{item.id}}">
+      <view class="pic">
+        <image src="{{item.cover}}" mode="aspectFit" />
+      </view>
+
+      <view class="movie-info">
+        <view class="base-info">
+          <text>名字：{{item.title}}\n</text>
+          <text>评分：{{item.rate}}\n</text>
+          <text>评分数：{{item.cover_x}}\n</text>
+          <text>是否最近上映：{{item.is_new == 'true'? '是' : '否'}}\n</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="hr"></view>
+  </block>
+</view>

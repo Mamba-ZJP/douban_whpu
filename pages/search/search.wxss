@@ -1,0 +1,51 @@
+/* pages/search/search.wxss */
+@import '/pages/movies/movies.wxss';
+
+.view{
+  padding-top: 1rem; 
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  padding-left: 37px;
+  justify-content: space-around;
+}
+
+.input {
+  width: 60%;
+  border: 1px solid #CCC;
+  background-color: white;
+}
+
+.SearchButton {
+  background-color: #DD5E0E;
+  color: white;
+  font-size: 17px;
+  height: 54rpx;
+  line-height: 54rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 5rem;
+  white-space: nowrap;
+}
+
+/* 1px=0.07毫米 */
+/* //movie-info:图片和电影信息之间的间距 */
+.movie-info {
+  color: #FFFFFF;
+  font-size: 14px;
+  padding-top: 20px;
+  line-height: 20px;
+  margin-left: 30px;
+}
+
+.inputShow {
+  padding-left: 35px;
+  color: white;
+  font-size: 12px;
+}
+
+.pic {
+  padding-left: 25rpx;
+}

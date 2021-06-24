@@ -1,0 +1,22 @@
+{
+  "usingComponents": {},
+  "tabBar": {
+    "color": "#ddddddd",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#2b2b2b",
+    "list": [
+      {
+        "pagePath": "pages/movies/movies",
+        "iconPath": "/assets/img/dy.png",
+        "selectedIconPath": "/assets/img/dy-1.png",
+        "text": "叶林，我爱!"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "/assets/img/dy.png",
+        "selectedIconPath": "/assets/img/dy-1.png",
+        "text": "爱你"
+      }
+    ]
+  }
+}
